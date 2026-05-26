@@ -10,7 +10,7 @@ export default function Home() {
     "@type": "Organization",
     name: "OroActive",
     url: "https://oroactive.it",
-    logo: "https://oroactive.it/icon.svg",
+    logo: "https://oroactive.it/oroactive-logo.svg",
     sameAs: []
   };
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const links = [
@@ -13,9 +14,15 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-night/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="grid h-11 w-11 place-items-center rounded-full border border-orange/70 bg-orange/10 text-lg font-black text-orange">OA</span>
-          <span className="font-display text-xl font-bold tracking-tight">OroActive</span>
+        <Link href="/" className="flex shrink-0 items-center" aria-label="OroActive home">
+          <Image
+            src="/oroactive-logo.svg"
+            alt="OroActive"
+            width={186}
+            height={48}
+            priority
+            className="h-10 w-auto sm:h-12"
+          />
         </Link>
         <div className="hidden items-center gap-6 text-sm text-warm/75 lg:flex">
           {links.map(([label, href]) => (
