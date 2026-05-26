@@ -31,15 +31,15 @@ export async function GET() {
       faculty: true,
       modules: {
         include: { lessons: true },
-        orderBy: { sortOrder: "asc" }
+        orderBy: { order: "asc" }
       }
     },
     orderBy: [{ title: "asc" }]
   });
 
   courses.sort((a, b) => {
-    const facultyA = a.faculty?.name || "";
-    const facultyB = b.faculty?.name || "";
+    const facultyA = a.faculty?.title || "";
+    const facultyB = b.faculty?.title || "";
     return facultyA.localeCompare(facultyB) || a.title.localeCompare(b.title);
   });
 
@@ -55,12 +55,12 @@ export async function POST(request: Request) {
         slug: slugify(payload.title),
         description: payload.description,
         facultyId: payload.facultyId,
-        category: payload.category || null,
+        category: payload.category || "Generale",
         level: payload.level,
-        durationMinutes: payload.durationMinutes || null,
-        instructor: payload.instructor || null,
+        durationMinutes: payload.durationMinutes || 0,
+        teacher: payload.instructor || null,
         thumbnailUrl: payload.thumbnailUrl || null,
-        certificationFinal: payload.certificationFinal,
+        finalCertification: payload.certificationFinal,
         active: payload.active
       }
     });

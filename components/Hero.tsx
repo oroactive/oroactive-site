@@ -15,7 +15,7 @@ export function Hero() {
             Il nuovo standard per vendere oro in modo chiaro, veloce e sicuro.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-warm/72">
-            OroActive combina quotazioni live, consulenza professionale, gestione digitale degli atti e formazione interna per offrire un'esperienza premium nei compro oro moderni.
+            OroActive combina quotazioni live, consulenza professionale, gestione digitale degli atti e formazione interna per offrire un&apos;esperienza premium nei compro oro moderni.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="#calcolatore" className="rounded-full bg-orange px-7 py-4 text-center font-bold text-night shadow-glow transition hover:scale-[1.02]">

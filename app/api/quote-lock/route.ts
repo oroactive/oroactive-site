@@ -20,7 +20,8 @@ export async function POST(request: Request) {
         phone: payload.phone,
         email: payload.email || null,
         storeId: payload.storeId || null,
-        source: "blocco-quotazione",
+        metal: payload.metal,
+        grams: payload.grams,
         message: `Richiesta blocco quotazione ${payload.metal} per ${payload.grams}g`
       }
     });

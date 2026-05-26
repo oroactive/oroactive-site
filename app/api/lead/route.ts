@@ -19,8 +19,7 @@ export async function POST(request: Request) {
         phone: payload.phone,
         email: payload.email || null,
         storeId: payload.storeId || null,
-        message: payload.message || null,
-        source: "oroactive.it"
+        message: payload.message || null
       }
     });
 

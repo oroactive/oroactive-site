@@ -23,7 +23,7 @@ async function internalContext(question: string) {
       ])
     },
     take: 6,
-    orderBy: { updatedAt: "desc" }
+    orderBy: { createdAt: "desc" }
   });
 }
 

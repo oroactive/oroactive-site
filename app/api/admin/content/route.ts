@@ -50,8 +50,7 @@ export async function POST(request: Request) {
         data: {
           question: payload.title,
           answer: payload.content,
-          category: payload.category || "Generale",
-          published: true
+          category: payload.category || "Generale"
         }
       });
       return NextResponse.json({ ok: true, item: faq }, { status: 201 });
@@ -62,6 +61,7 @@ export async function POST(request: Request) {
         title: payload.title,
         category: payload.category || "OroActive",
         content: payload.content,
+        source: "Dashboard contenuti",
         approved: true
       }
     });
