@@ -1,5 +1,5 @@
-const CACHE_NAME = "oroactive-site-static-v1";
-const STATIC_ASSETS = ["/", "/icon.svg", "/manifest.webmanifest"];
+const CACHE_NAME = "oroactive-site-static-v2";
+const STATIC_ASSETS = ["/icon.svg", "/oroactive-logo.svg", "/manifest.webmanifest"];
 const SENSITIVE_PREFIXES = ["/api/", "/dashboard", "/login"];
 
 self.addEventListener("install", (event) => {
@@ -21,6 +21,19 @@ self.addEventListener("fetch", (event) => {
   if (requestUrl.origin !== self.location.origin) return;
   if (SENSITIVE_PREFIXES.some((prefix) => requestUrl.pathname.startsWith(prefix))) return;
   if (event.request.method !== "GET") return;
+
+  if (event.request.destination === "document") {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          const clone = response.clone();
+          if (response.ok) caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then((cached) => {

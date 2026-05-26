@@ -1,6 +1,6 @@
 import { Nav } from "@/components/Nav";
 
-const kpis = ["Lead oggi", "Quotazioni bloccate", "Corsi attivi", "Badge rilasciati", "Negozi attivi", "Alert CMS"];
+const kpis = ["Lead oggi", "Valutazioni richieste", "Corsi attivi", "Badge rilasciati", "Negozi attivi", "Alert CMS"];
 
 export const metadata = {
   title: "Dashboard amministrativa",

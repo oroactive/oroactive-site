@@ -1,7 +1,7 @@
 import { GoldCalculator } from "@/components/GoldCalculator";
 import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
-import { AcademyPreview, BlogFaq, Franchising, StoresMap, ValueFlow } from "@/components/Sections";
+import { AcademyPreview, BlogFaq, Franchising, SiteFooter, StoresMap, ValueFlow } from "@/components/Sections";
 import { QuoteTicker } from "@/components/QuoteTicker";
 
 export default function Home() {
@@ -28,9 +28,7 @@ export default function Home() {
         <Franchising />
         <BlogFaq />
       </main>
-      <footer className="border-t border-white/10 px-5 py-10 text-center text-sm text-warm/55">
-        © 2026 OroActive Tech - Software gestionale proprietario
-      </footer>
+      <SiteFooter />
     </>
   );
 }

@@ -31,8 +31,8 @@ export const faqs = [
     answer: "La valutazione parte dalla quotazione aggiornata dei metalli, dal peso e dal titolo del prezioso. In negozio viene verificata la purezza e viene fornita una proposta chiara prima della vendita."
   },
   {
-    question: "Posso bloccare la quotazione?",
-    answer: "Si, il sistema di blocco quotazione permette di inviare una richiesta con metallo, peso e negozio preferito. Il team conferma i dettagli prima dell'appuntamento."
+    question: "Posso richiedere una valutazione in negozio?",
+    answer: "Si, puoi stimare il valore online e scegliere il negozio piu comodo per la verifica professionale del metallo e del titolo."
   },
   {
     question: "OroActive acquista anche argento e platino?",

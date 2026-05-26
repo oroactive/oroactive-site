@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { academyFaculties, blogPosts, faqs, stores } from "@/lib/data";
 
 export function ValueFlow() {
   const steps = [
     ["Calcola", "Stima il valore con quotazioni live."],
-    ["Blocca", "Invia una richiesta con negozio e metallo."],
+    ["Prenota", "Scegli il negozio piu comodo."],
     ["Verifica", "Test professionale in sede."],
     ["Ricevi", "Pagamento chiaro e tracciabile."]
   ];
@@ -117,5 +118,79 @@ export function BlogFaq() {
         </div>
       </div>
     </section>
+  );
+}
+
+const footerLinks = [
+  ["Quotazioni", "/#quotazioni"],
+  ["Calcolatore", "/#calcolatore"],
+  ["Negozi", "/#negozi"],
+  ["Academy", "/academy"],
+  ["Franchising", "/#franchising"],
+  ["Blog", "/#blog"]
+];
+
+const serviceLinks = [
+  "Compro oro",
+  "Valutazione argento",
+  "Valutazione platino",
+  "Stima gioielli",
+  "Compro monete",
+  "Servizi per punti vendita"
+];
+
+export function SiteFooter() {
+  return (
+    <footer className="mt-16 border-t border-white/10 bg-[#11131a] text-warm">
+      <div className="bg-orange px-5 py-12 text-center text-night">
+        <p className="mx-auto max-w-4xl font-display text-2xl font-black leading-tight md:text-3xl">
+          OroActive valuta oro, argento e platino con metodo chiaro, tecnologia proprietaria e verifica professionale in negozio.
+        </p>
+      </div>
+
+      <div className="px-5 py-14">
+        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 xl:grid-cols-[1.1fr_.9fr_1.1fr_1.25fr]">
+          <div>
+            <Image src="/oroactive-logo.svg" alt="OroActive" width={224} height={58} className="h-auto w-56" />
+            <p className="mt-5 max-w-sm text-warm/70">
+              Compro oro premium per valutare preziosi, gioielli, argento e platino con quotazioni aggiornate e processi digitali.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-display text-xl font-black uppercase tracking-wide">Navigazione</h2>
+            <div className="mt-5 grid gap-3 text-warm/76">
+              {footerLinks.map(([label, href]) => (
+                <Link key={label} href={href} className="transition hover:text-orange">{label}</Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h2 className="font-display text-xl font-black uppercase tracking-wide">Compro e vendo oro</h2>
+            <div className="mt-5 grid gap-3 text-warm/76">
+              {serviceLinks.map((service) => (
+                <span key={service}>{service}</span>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h2 className="font-display text-xl font-black uppercase tracking-wide">I nostri negozi</h2>
+            <div className="mt-5 grid gap-3 text-warm/76">
+              {stores.map((store) => (
+                <Link key={store.slug} href={`/stores/${store.slug}`} className="transition hover:text-orange">
+                  {store.city} - {store.address}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10 px-5 py-6 text-center text-sm text-warm/55">
+        © 2026 OroActive Tech - Software gestionale proprietario - Privacy Policy - Cookie Policy
+      </div>
+    </footer>
   );
 }
