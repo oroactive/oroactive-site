@@ -34,7 +34,13 @@ export async function GET() {
         orderBy: { sortOrder: "asc" }
       }
     },
-    orderBy: [{ faculty: { name: "asc" } }, { title: "asc" }]
+    orderBy: [{ title: "asc" }]
+  });
+
+  courses.sort((a, b) => {
+    const facultyA = a.faculty?.name || "";
+    const facultyB = b.faculty?.name || "";
+    return facultyA.localeCompare(facultyB) || a.title.localeCompare(b.title);
   });
 
   return NextResponse.json({ ok: true, courses });
