@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="96" fill="#0B0B0D"/>
-  <circle cx="256" cy="256" r="174" fill="none" stroke="#FF7A00" stroke-width="24"/>
-  <circle cx="256" cy="256" r="124" fill="none" stroke="#D4A24C" stroke-width="10"/>
-  <path d="m256 128 34 83 90 7-69 58 21 88-76-47-76 47 21-88-69-58 90-7z" fill="#FF7A00"/>
-  <text x="256" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#F8F6F2">OA</text>
-</svg>
