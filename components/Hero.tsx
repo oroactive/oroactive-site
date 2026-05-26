@@ -10,10 +10,10 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.08fr_.92fr]">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .7 }}>
           <Image
-            src="/oroactive-logo.svg"
+            src="/oroactive-logo.png"
             alt="OroActive"
             width={300}
-            height={300}
+            height={375}
             priority
             className="mb-7 h-auto w-48 sm:w-56 md:w-64"
           />
