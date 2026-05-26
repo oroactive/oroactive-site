@@ -2,20 +2,26 @@ import { Nav } from "@/components/Nav";
 import { stores } from "@/lib/data";
 import { notFound } from "next/navigation";
 
+type StorePageProps = {
+  params: Promise<{ city: string }>;
+};
+
 export function generateStaticParams() {
   return stores.map((store) => ({ city: store.slug }));
 }
 
-export function generateMetadata({ params }: { params: { city: string } }) {
-  const store = stores.find((item) => item.slug === params.city);
+export async function generateMetadata({ params }: StorePageProps) {
+  const { city } = await params;
+  const store = stores.find((item) => item.slug === city);
   return {
     title: store ? `Compro oro ${store.city}` : "Negozi OroActive",
     description: store ? `OroActive ${store.city}: valutazione oro, argento e platino con esperienza premium.` : ""
   };
 }
 
-export default function StorePage({ params }: { params: { city: string } }) {
-  const store = stores.find((item) => item.slug === params.city);
+export default async function StorePage({ params }: StorePageProps) {
+  const { city } = await params;
+  const store = stores.find((item) => item.slug === city);
   if (!store) notFound();
   const schema = {
     "@context": "https://schema.org",

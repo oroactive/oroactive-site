@@ -2,17 +2,23 @@ import { Nav } from "@/components/Nav";
 import { blogPosts } from "@/lib/data";
 import { notFound } from "next/navigation";
 
+type BlogPostPageProps = {
+  params: Promise<{ slug: string }>;
+};
+
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = blogPosts.find((item) => item.slug === params.slug);
+export async function generateMetadata({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const post = blogPosts.find((item) => item.slug === slug);
   return { title: post?.title || "Blog OroActive", description: post?.excerpt };
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = blogPosts.find((item) => item.slug === params.slug);
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params;
+  const post = blogPosts.find((item) => item.slug === slug);
   if (!post) notFound();
   return (
     <>
