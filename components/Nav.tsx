@@ -60,12 +60,12 @@ export function Nav() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <Link href="/" className="flex shrink-0 items-center" aria-label="OroActive home">
           <Image
-            src="/oroactive-logo.svg"
+            src="/oroactive-logo.png"
             alt="OroActive"
-            width={186}
-            height={48}
+            width={108}
+            height={135}
             priority
-            className="h-10 w-auto sm:h-12"
+            className="h-12 w-auto sm:h-14"
           />
         </Link>
         <div className="hidden items-center gap-6 text-sm text-warm/75 lg:flex">

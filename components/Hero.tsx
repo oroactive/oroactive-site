@@ -10,12 +10,12 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.08fr_.92fr]">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .7 }}>
           <Image
-            src="/oroactive-logo.svg"
+            src="/oroactive-logo.png"
             alt="OroActive"
-            width={310}
-            height={80}
+            width={300}
+            height={375}
             priority
-            className="mb-7 h-auto w-56 sm:w-72"
+            className="mb-7 h-auto w-48 sm:w-56 md:w-64"
           />
           <p className="mb-5 inline-flex rounded-full border border-orange/40 bg-orange/10 px-4 py-2 text-sm font-bold text-orange">
             Compro oro premium + tecnologia proprietaria

@@ -151,7 +151,7 @@ export function SiteFooter() {
       <div className="px-5 py-14">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 xl:grid-cols-[1.1fr_.9fr_1.1fr_1.25fr]">
           <div>
-            <Image src="/oroactive-logo.svg" alt="OroActive" width={224} height={58} className="h-auto w-56" />
+            <Image src="/oroactive-logo.png" alt="OroActive" width={180} height={225} className="h-auto w-36 sm:w-44" />
             <p className="mt-5 max-w-sm text-warm/70">
               Compro oro premium per valutare preziosi, gioielli, argento e platino con quotazioni aggiornate e processi digitali.
             </p>
