@@ -1,13 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { PwaRegister } from "@/components/PwaRegister";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://oroactive.it"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "OroActive | Compro oro premium, quotazioni live e Academy",
     template: "%s | OroActive"
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "OroActive",
     description: "Compro oro tecnologico, premium e trasparente.",
-    url: "https://oroactive.it",
+    url: siteUrl,
     siteName: "OroActive",
     type: "website",
     locale: "it_IT"
