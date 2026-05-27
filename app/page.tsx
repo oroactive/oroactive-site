@@ -1,8 +1,5 @@
-import { GoldCalculator } from "@/components/GoldCalculator";
-import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
-import { AcademyPreview, BlogFaq, Franchising, SiteFooter, StoresMap, ValueFlow } from "@/components/Sections";
-import { QuoteTicker } from "@/components/QuoteTicker";
+import { OroShopInspiredHome } from "@/components/OroShopInspiredHome";
 import { siteUrl } from "@/lib/site";
 
 export default function Home() {
@@ -19,17 +16,7 @@ export default function Home() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Nav />
-      <main>
-        <Hero />
-        <ValueFlow />
-        <QuoteTicker />
-        <GoldCalculator />
-        <StoresMap />
-        <AcademyPreview />
-        <Franchising />
-        <BlogFaq />
-      </main>
-      <SiteFooter />
+      <OroShopInspiredHome />
     </>
   );
 }
