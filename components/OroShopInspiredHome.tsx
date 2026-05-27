@@ -43,10 +43,10 @@ export function OroShopInspiredHome() {
                 fill
                 priority
                 sizes="64vw"
-                className="origin-top scale-[1.28] object-cover object-[center_18%] opacity-95"
+                className="origin-top scale-[1.26] object-cover object-[center_15%] opacity-100 brightness-110 contrast-105 saturate-110"
               />
               <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#090807] via-[#090807]/82 to-transparent" />
-              <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#090807] to-transparent" />
+              <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-[#090807]/55 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 h-96 bg-gradient-to-t from-[#090807] via-[#090807]/78 to-transparent" />
               <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#090807] to-transparent" />
             </div>
@@ -87,9 +87,9 @@ export function OroShopInspiredHome() {
                 fill
                 priority
                 sizes="100vw"
-                className="origin-top scale-[1.08] object-cover object-[center_20%] opacity-95"
+                className="origin-top scale-[1.06] object-cover object-[center_15%] opacity-100 brightness-110 contrast-105 saturate-110"
               />
-              <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#090807] to-transparent" />
+              <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#090807]/50 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#090807] to-transparent" />
               <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#090807] to-transparent" />
               <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#090807] to-transparent" />
