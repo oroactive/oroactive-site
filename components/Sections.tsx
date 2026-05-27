@@ -4,7 +4,7 @@ import { academyFaculties, blogPosts, faqs, stores } from "@/lib/data";
 
 export function ValueFlow() {
   const steps = [
-    ["Calcola", "Stima il valore con quotazioni live."],
+    ["Valuta", "Richiedi una valutazione professionale."],
     ["Prenota", "Scegli il negozio piu comodo."],
     ["Verifica", "Test professionale in sede."],
     ["Ricevi", "Pagamento chiaro e tracciabile."]
@@ -123,7 +123,7 @@ export function BlogFaq() {
 
 const footerLinks = [
   ["Quotazioni", "/#quotazioni"],
-  ["Calcolatore", "/#calcolatore"],
+  ["Perizie", "/#perizie"],
   ["Negozi", "/#negozi"],
   ["Academy", "/academy"],
   ["Franchising", "/#franchising"],
@@ -136,6 +136,7 @@ const serviceLinks = [
   "Valutazione platino",
   "Stima gioielli",
   "Compro monete",
+  "Perizie certificate",
   "Servizi per punti vendita"
 ];
 

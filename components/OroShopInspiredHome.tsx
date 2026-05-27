@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GoldCalculator } from "@/components/GoldCalculator";
 import { QuoteTicker } from "@/components/QuoteTicker";
 import { SiteFooter } from "@/components/Sections";
 import { faqs, stores } from "@/lib/data";
@@ -21,7 +20,8 @@ const serviceCards = [
   ["Oro usato", "24kt, 22kt, 18kt, 14kt e tutte le principali carature."],
   ["Argento", "Lingotti, posate, gioielli e oggetti in argento 999, 925 e 800."],
   ["Platino", "Valutazione professionale di platino 950, 900 e 850."],
-  ["Gioielli e monete", "Stima immediata e controllo accurato dei tuoi preziosi."]
+  ["Gioielli e monete", "Stima immediata e controllo accurato dei tuoi preziosi."],
+  ["Perizie certificate", "Perizia professionale con analisi tecnica, descrizione del bene e certificazione redatta da esperti del settore per gioielli, preziosi, monete e oggetti di valore."]
 ];
 
 const growthCards = [
@@ -33,8 +33,26 @@ export function OroShopInspiredHome() {
   return (
     <>
       <main className="bg-[#f5f0e7] text-[#15120d]">
-        <section className="relative overflow-hidden bg-[#090807] text-warm">
-          <div className="mx-auto grid min-h-[calc(100vh-88px)] max-w-7xl items-center gap-8 px-5 py-7 lg:grid-cols-[.98fr_1.02fr] lg:py-8">
+        <section className="relative isolate overflow-hidden bg-[#090807] text-warm">
+          <div className="pointer-events-none absolute inset-0 z-0 hidden lg:block">
+            <div className="absolute inset-y-0 right-0 w-[64vw] max-w-[1040px] overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_42%,rgba(255,122,0,.38),transparent_44%)]" />
+              <Image
+                src="/hero-woman-cash.png"
+                alt=""
+                fill
+                priority
+                sizes="64vw"
+                className="origin-top scale-[1.28] object-cover object-[center_18%] opacity-95"
+              />
+              <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#090807] via-[#090807]/82 to-transparent" />
+              <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-[#090807] to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-96 bg-gradient-to-t from-[#090807] via-[#090807]/78 to-transparent" />
+              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#090807] to-transparent" />
+            </div>
+          </div>
+
+          <div className="mx-auto grid min-h-[calc(100vh-88px)] max-w-7xl items-center gap-8 px-5 py-10 lg:grid-cols-[.86fr_1.14fr] lg:py-12">
             <div className="relative z-10 max-w-2xl">
               <Image src="/oroactive-logo.png" alt="OroActive" width={180} height={225} priority className="mb-4 h-auto w-24 sm:w-28" />
               <p className="inline-flex rounded-full bg-orange px-4 py-2 text-xs font-black uppercase tracking-wide text-night sm:text-sm">
@@ -47,11 +65,11 @@ export function OroShopInspiredHome() {
                 Valutiamo oro, argento, platino, gioielli e monete con quotazioni aggiornate, massima riservatezza e pagamento chiaro in negozio.
               </p>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                <Link href="#calcolatore" className="rounded-full bg-orange px-7 py-4 text-center font-black text-night shadow-glow transition hover:bg-[#ff922e]">
+                <Link href="#negozi" className="rounded-full bg-orange px-7 py-4 text-center font-black text-night shadow-glow transition hover:bg-[#ff922e]">
                   Richiedi una valutazione
                 </Link>
-                <Link href="#negozi" className="rounded-full border border-white/25 px-7 py-4 text-center font-black text-warm transition hover:border-orange hover:text-orange">
-                  Trova il negozio
+                <Link href="#perizie" className="rounded-full border border-white/25 px-7 py-4 text-center font-black text-warm transition hover:border-orange hover:text-orange">
+                  Perizie certificate
                 </Link>
               </div>
               <div className="mt-5 grid max-w-xl gap-3 text-sm font-bold text-warm/70 sm:grid-cols-3">
@@ -61,21 +79,20 @@ export function OroShopInspiredHome() {
               </div>
             </div>
 
-            <div className="relative min-h-[440px] lg:min-h-[590px]">
-              <div className="absolute inset-x-10 bottom-0 top-10 rounded-[2rem] bg-orange/20 blur-3xl" />
+            <div className="relative z-10 min-h-[470px] overflow-hidden lg:hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_62%_38%,rgba(255,122,0,.36),transparent_56%)]" />
               <Image
                 src="/hero-woman-cash.png"
                 alt="Consulente OroActive con denaro contante"
-                width={1024}
-                height={1536}
+                fill
                 priority
-                className="absolute bottom-0 left-1/2 h-full w-auto max-w-none -translate-x-1/2 object-contain"
+                sizes="100vw"
+                className="origin-top scale-[1.08] object-cover object-[center_20%] opacity-95"
               />
-              <div className="absolute bottom-8 left-0 right-0 mx-auto w-[min(92%,28rem)] rounded-2xl border border-white/15 bg-black/70 p-5 shadow-card backdrop-blur-xl">
-                <p className="text-sm font-bold uppercase tracking-wide text-orange">Valutazione immediata</p>
-                <strong className="mt-1 block font-display text-3xl">Oro, argento e platino</strong>
-                <p className="mt-2 text-sm text-warm/65">Stima online e verifica professionale in negozio.</p>
-              </div>
+              <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#090807] to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#090807] to-transparent" />
+              <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#090807] to-transparent" />
+              <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#090807] to-transparent" />
             </div>
           </div>
         </section>
@@ -113,7 +130,7 @@ export function OroShopInspiredHome() {
           </div>
         </section>
 
-        <section className="bg-[#15120d] px-5 py-20 text-warm">
+        <section id="perizie" className="bg-[#15120d] px-5 py-20 text-warm">
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.8fr_1.2fr]">
             <div>
               <p className="font-bold uppercase tracking-[.22em] text-orange">Cosa valutiamo</p>
@@ -121,8 +138,8 @@ export function OroShopInspiredHome() {
               <p className="mt-5 text-warm/65">Un unico percorso per stimare il valore online e completare la verifica in negozio con personale formato.</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
-              {serviceCards.map(([title, text]) => (
-                <article key={title} className="rounded-2xl border border-white/10 bg-white/[.06] p-6">
+              {serviceCards.map(([title, text], index) => (
+                <article key={title} className={`rounded-2xl border border-white/10 bg-white/[.06] p-6 ${index === serviceCards.length - 1 ? "sm:col-span-2" : ""}`}>
                   <h3 className="font-display text-2xl font-black">{title}</h3>
                   <p className="mt-3 text-warm/64">{text}</p>
                 </article>
@@ -154,10 +171,6 @@ export function OroShopInspiredHome() {
           </div>
         </section>
 
-        <div className="bg-[#090807] text-warm">
-          <GoldCalculator />
-        </div>
-
         <section id="negozi" className="px-5 py-20">
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
@@ -165,8 +178,8 @@ export function OroShopInspiredHome() {
                 <p className="font-bold uppercase tracking-[.22em] text-orange">Punti vendita</p>
                 <h2 className="mt-3 font-display text-4xl font-black md:text-5xl">Scegli il negozio OroActive piu comodo.</h2>
               </div>
-              <Link href="#calcolatore" className="rounded-full bg-night px-6 py-3 text-center font-black text-orange transition hover:bg-black">
-                Calcola prima il valore
+              <Link href="#perizie" className="rounded-full bg-night px-6 py-3 text-center font-black text-orange transition hover:bg-black">
+                Scopri le perizie
               </Link>
             </div>
             <div className="mt-10 grid gap-5 md:grid-cols-3">

@@ -27,8 +27,8 @@ export function Hero() {
             OroActive combina quotazioni live, consulenza professionale, gestione digitale degli atti e formazione interna per offrire un&apos;esperienza premium nei compro oro moderni.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link href="#calcolatore" className="rounded-full bg-orange px-7 py-4 text-center font-bold text-night shadow-glow transition hover:scale-[1.02]">
-              Calcola il valore
+            <Link href="#negozi" className="rounded-full bg-orange px-7 py-4 text-center font-bold text-night shadow-glow transition hover:scale-[1.02]">
+              Richiedi una valutazione
             </Link>
             <Link href="#negozi" className="rounded-full border border-white/15 px-7 py-4 text-center font-bold text-warm transition hover:border-orange hover:text-orange">
               Trova negozio

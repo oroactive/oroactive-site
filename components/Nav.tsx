@@ -7,7 +7,7 @@ import { type MouseEvent, useEffect, useState } from "react";
 
 const links = [
   ["Quotazioni", "/#quotazioni"],
-  ["Calcolatore", "/#calcolatore"],
+  ["Perizie", "/#perizie"],
   ["Negozi", "/#negozi"],
   ["Academy", "/academy"],
   ["Franchising", "/#franchising"],
