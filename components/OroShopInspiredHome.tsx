@@ -42,8 +42,7 @@ export function OroShopInspiredHome() {
                 alt=""
                 fill
                 priority
-                quality={100}
-                sizes="(min-width: 1536px) 1310px, (min-width: 1024px) 82vw, 100vw"
+                sizes="64vw"
                 className="origin-top scale-[1.26] object-cover object-[center_15%] opacity-100 brightness-110 contrast-105 saturate-110"
               />
               <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#090807] via-[#090807]/82 to-transparent" />
@@ -87,7 +86,6 @@ export function OroShopInspiredHome() {
                 alt="Consulente OroActive con denaro contante"
                 fill
                 priority
-                quality={100}
                 sizes="100vw"
                 className="origin-top scale-[1.06] object-cover object-[center_15%] opacity-100 brightness-110 contrast-105 saturate-110"
               />
