@@ -7,3 +7,6 @@ dist/
 coverage/
 tsconfig.tsbuildinfo
 *.log
+
+.DS_Store
+**/.DS_Store
