@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { QuoteTicker } from "@/components/QuoteTicker";
 import { SiteFooter } from "@/components/Sections";
-import { faqs, stores } from "@/lib/data";
+import { faqs } from "@/lib/data";
 
 const benefits = [
   ["Pagamento rapido", "Contanti o bonifico secondo normativa vigente."],
@@ -176,20 +176,11 @@ export function OroShopInspiredHome() {
             <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
               <div>
                 <p className="font-bold uppercase tracking-[.22em] text-orange">Punti vendita</p>
-                <h2 className="mt-3 font-display text-4xl font-black md:text-5xl">Scegli il negozio OroActive piu comodo.</h2>
+                <h2 className="mt-3 font-display text-4xl font-black text-orange md:text-5xl">Coming Soon</h2>
               </div>
               <Link href="#perizie" className="rounded-full bg-night px-6 py-3 text-center font-black text-orange transition hover:bg-black">
                 Scopri le perizie
               </Link>
-            </div>
-            <div className="mt-10 grid gap-5 md:grid-cols-3">
-              {stores.map((store) => (
-                <Link key={store.slug} href={`/stores/${store.slug}`} className="rounded-[1.5rem] border border-[#e2d6c2] bg-white p-7 shadow-[0_20px_60px_rgba(42,31,15,.12)] transition hover:-translate-y-1">
-                  <h3 className="font-display text-3xl font-black">{store.city}</h3>
-                  <p className="mt-3 text-[#5c5145]">{store.address}</p>
-                  <p className="mt-5 font-black text-orange">{store.phone}</p>
-                </Link>
-              ))}
             </div>
           </div>
         </section>

@@ -178,13 +178,7 @@ export function SiteFooter() {
 
           <div>
             <h2 className="font-display text-xl font-black uppercase tracking-wide">I nostri negozi</h2>
-            <div className="mt-5 grid gap-3 text-warm/76">
-              {stores.map((store) => (
-                <Link key={store.slug} href={`/stores/${store.slug}`} className="transition hover:text-orange">
-                  {store.city} - {store.address}
-                </Link>
-              ))}
-            </div>
+            <p className="mt-5 font-display text-2xl font-black text-orange">Coming Soon</p>
           </div>
         </div>
       </div>
