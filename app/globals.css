@@ -22,7 +22,7 @@ section[id] {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(255, 122, 0, .18), transparent 34rem),
+    radial-gradient(circle at top left, rgba(239, 80, 11, .18), transparent 34rem),
     radial-gradient(circle at bottom right, rgba(212, 162, 76, .13), transparent 32rem),
     #0b0b0d;
   color: #f8f6f2;
@@ -41,7 +41,7 @@ a {
 }
 
 .orange-glow {
-  box-shadow: 0 0 54px rgba(255, 122, 0, .24);
+  box-shadow: 0 0 54px rgba(239, 80, 11, .24);
 }
 
 .section-pad {

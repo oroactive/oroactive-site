@@ -79,7 +79,7 @@ export function Nav() {
         </div>
         <Link
           href={accountName ? "/dashboard" : "/login"}
-          className="rounded-full bg-orange px-5 py-2 text-sm font-bold text-night transition hover:bg-[#ff922e]"
+          className="rounded-full bg-orange px-5 py-2 text-sm font-bold text-night transition hover:shadow-glow"
         >
           {accountName || "Area riservata"}
         </Link>

@@ -48,7 +48,7 @@ export function OroShopInspiredHome() {
                 Valutiamo oro, argento, platino, gioielli e monete con quotazioni aggiornate, massima riservatezza e pagamento chiaro in negozio.
               </p>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                <Link href="#negozi" className="rounded-full bg-orange px-7 py-4 text-center font-black text-night shadow-glow transition hover:bg-[#ff922e]">
+                <Link href="#negozi" className="rounded-full bg-orange px-7 py-4 text-center font-black text-night shadow-glow transition hover:ring-2 hover:ring-orange/50">
                   Richiedi una valutazione
                 </Link>
                 <Link href="#perizie" className="rounded-full border border-white/25 px-7 py-4 text-center font-black text-warm transition hover:border-orange hover:text-orange">
@@ -63,7 +63,7 @@ export function OroShopInspiredHome() {
             </div>
 
             <div data-hero-portrait className="relative z-10 mx-auto aspect-[2/3] w-full max-w-[480px] lg:max-w-[520px]">
-              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_48%,rgba(255,122,0,.18),transparent_66%)]" />
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_48%,rgba(239,80,11,.18),transparent_66%)]" />
               <Image
                 src="/hero-ritratto-mezzobusto-20260923.png"
                 alt="Donna con banconote in euro"
