@@ -34,25 +34,7 @@ export function OroShopInspiredHome() {
     <>
       <main className="bg-[#f5f0e7] text-[#15120d]">
         <section className="relative isolate overflow-hidden bg-[#090807] text-warm">
-          <div className="pointer-events-none absolute inset-0 z-0 hidden lg:block">
-            <div className="absolute inset-y-0 right-0 w-[64vw] max-w-[1040px] overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_64%_42%,rgba(255,122,0,.38),transparent_44%)]" />
-              <Image
-                src="/hero-woman-cash.png"
-                alt=""
-                fill
-                priority
-                sizes="64vw"
-                className="origin-top scale-[1.26] object-cover object-[center_15%] opacity-100 brightness-110 contrast-105 saturate-110"
-              />
-              <div className="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-[#090807] via-[#090807]/82 to-transparent" />
-              <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-[#090807]/55 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 h-96 bg-gradient-to-t from-[#090807] via-[#090807]/78 to-transparent" />
-              <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#090807] to-transparent" />
-            </div>
-          </div>
-
-          <div className="mx-auto grid min-h-[calc(100vh-88px)] max-w-7xl items-center gap-8 px-5 py-10 lg:grid-cols-[.86fr_1.14fr] lg:py-12">
+          <div className="mx-auto grid max-w-7xl items-center gap-8 px-5 pt-10 lg:grid-cols-2 lg:gap-12 lg:py-10">
             <div className="relative z-10 max-w-2xl">
               <Image src="/oroactive-logo.png" alt="OroActive" width={180} height={225} priority className="mb-4 h-auto w-24 sm:w-28" />
               <p className="inline-flex rounded-full bg-orange px-4 py-2 text-xs font-black uppercase tracking-wide text-night sm:text-sm">
@@ -79,20 +61,17 @@ export function OroShopInspiredHome() {
               </div>
             </div>
 
-            <div className="relative z-10 min-h-[470px] overflow-hidden lg:hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_62%_38%,rgba(255,122,0,.36),transparent_56%)]" />
+            <div data-hero-portrait className="relative z-10 mx-auto aspect-[2/3] w-full max-w-[480px] lg:max-w-[520px]">
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_48%,rgba(255,122,0,.18),transparent_66%)]" />
               <Image
-                src="/hero-woman-cash.png"
-                alt="Consulente OroActive con denaro contante"
+                src="/hero-ritratto-mezzobusto-20260923.png"
+                alt="Donna con banconote in euro"
                 fill
                 priority
-                sizes="100vw"
-                className="origin-top scale-[1.06] object-cover object-[center_15%] opacity-100 brightness-110 contrast-105 saturate-110"
+                sizes="(min-width: 1280px) 520px, (min-width: 1024px) 46vw, (min-width: 520px) 480px, calc(100vw - 40px)"
+                className="object-contain object-bottom"
               />
-              <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#090807]/50 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#090807] to-transparent" />
-              <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#090807] to-transparent" />
-              <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#090807] to-transparent" />
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#090807] to-transparent" />
             </div>
           </div>
         </section>
