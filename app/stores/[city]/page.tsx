@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: StorePageProps) {
   const store = stores.find((item) => item.slug === city);
   return {
     title: store ? `Compro oro ${store.city}` : "Negozi OroActive",
-    description: store ? `OroActive ${store.city}: valutazione oro, argento e platino con esperienza premium.` : ""
+    description: store ? `OroActive ${store.city}: valutazione oro, argento e diamanti con esperienza premium.` : ""
   };
 }
 
@@ -39,7 +39,7 @@ export default async function StorePage({ params }: StorePageProps) {
           <div>
             <p className="font-bold uppercase tracking-[.22em] text-orange">Pagina locale SEO</p>
             <h1 className="mt-3 font-display text-5xl font-black">Compro oro {store.city}</h1>
-            <p className="mt-5 text-warm/65">Valutazione oro, argento e platino con standard OroActive, quotazioni live e processo digitale.</p>
+            <p className="mt-5 text-warm/65">Valutazione oro, argento e diamanti con standard OroActive, verifica professionale e processo digitale.</p>
           </div>
           <div className="glass rounded-[2rem] p-8">
             <h2 className="font-display text-3xl font-bold">{store.name}</h2>

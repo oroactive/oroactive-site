@@ -36,7 +36,7 @@ test("metadata, home-screen icons and static cache use the new logo version", ()
     assert.equal(png.readUInt32BE(20), size);
   }
   const worker = read("public/sw.js");
-  assert.match(worker, /oroactive-site-static-v6/);
+  assert.match(worker, /oroactive-site-static-v7/);
   assert.match(worker, /oroactive-logo-ufficiale-20261001\.svg/);
   assert.doesNotMatch(worker, /oroactive-logo\.png/);
 });

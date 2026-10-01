@@ -1,15 +1,16 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { PUBLIC_METALS } from "@/lib/public-quotes";
 
 const fallbackQuotes = [
   { metal: "Oro", priceKg: 74250, currency: "EUR", source: "Dato demo" },
-  { metal: "Argento", priceKg: 875, currency: "EUR", source: "Dato demo" },
-  { metal: "Platino", priceKg: 28600, currency: "EUR", source: "Dato demo" }
+  { metal: "Argento", priceKg: 875, currency: "EUR", source: "Dato demo" }
 ];
 
 export async function GET() {
   try {
     const quotes = await prisma.quote.findMany({
+      where: { metal: { in: [...PUBLIC_METALS] } },
       orderBy: { createdAt: "desc" },
       take: 12
     });

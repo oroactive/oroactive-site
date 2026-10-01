@@ -12,22 +12,17 @@ const benefits = [
 ];
 
 const processSteps = [
-  ["1", "Descrivi i preziosi", "Porta oro, argento, platino, monete o gioielli nel punto vendita piu comodo."],
-  ["2", "Verifica professionale", "Pesatura, controllo titolo e quotazione aggiornata in modo trasparente."],
+  ["1", "Descrivi i preziosi", "Porta oro, argento, diamanti, monete o gioielli nel punto vendita piu comodo."],
+  ["2", "Verifica professionale", "Verifica del peso, del titolo dei metalli e delle caratteristiche dei diamanti."],
   ["3", "Ricevi la proposta", "Se accetti, pagamento tracciabile e documentazione gestita in sede."]
 ];
 
 const serviceCards = [
   ["Oro usato", "24kt, 22kt, 18kt, 14kt e tutte le principali carature."],
   ["Argento", "Lingotti, posate, gioielli e oggetti in argento 999, 925 e 800."],
-  ["Platino", "Valutazione professionale di platino 950, 900 e 850."],
+  ["Diamanti", "Valutazione individuale in base a caratura, taglio, colore, purezza e documentazione disponibile. Il valore viene determinato dopo la verifica della pietra."],
   ["Gioielli e monete", "Stima immediata e controllo accurato dei tuoi preziosi."],
   ["Perizie certificate", "Perizia professionale con analisi tecnica, descrizione del bene e certificazione redatta da esperti del settore per gioielli, preziosi, monete e oggetti di valore."]
-];
-
-const growthCards = [
-  ["Academy OroActive", "Formazione interna, procedure operative e percorsi per operatori qualificati.", "/academy", "Apri Academy"],
-  ["Franchising", "Standard di brand, gestionale proprietario e metodo operativo per punti vendita premium.", "#negozi", "Parla con un punto vendita"]
 ];
 
 export function OroShopInspiredHome() {
@@ -45,7 +40,7 @@ export function OroShopInspiredHome() {
                 Trasforma i tuoi preziosi in valore subito.
               </h1>
               <p className="mt-4 max-w-xl text-base leading-7 text-warm/72 md:text-lg">
-                Valutiamo oro, argento, platino, gioielli e monete con quotazioni aggiornate, massima riservatezza e pagamento chiaro in negozio.
+                Valutiamo oro, argento, diamanti, gioielli e monete con verifica professionale, massima riservatezza e pagamento chiaro in negozio.
               </p>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                 <Link href="#negozi" className="rounded-full bg-orange px-7 py-4 text-center font-black text-night shadow-glow transition hover:ring-2 hover:ring-orange/50">
@@ -56,7 +51,7 @@ export function OroShopInspiredHome() {
                 </Link>
               </div>
               <div className="mt-5 grid max-w-xl gap-3 text-sm font-bold text-warm/70 sm:grid-cols-3">
-                <span className="rounded-2xl border border-white/10 bg-white/[.06] px-4 py-3">Quotazioni live</span>
+                <span className="rounded-2xl border border-white/10 bg-white/[.06] px-4 py-3">Valutazione dedicata</span>
                 <span className="rounded-2xl border border-white/10 bg-white/[.06] px-4 py-3">Verifica in sede</span>
                 <span className="rounded-2xl border border-white/10 bg-white/[.06] px-4 py-3">Nessun impegno</span>
               </div>
@@ -119,32 +114,9 @@ export function OroShopInspiredHome() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {serviceCards.map(([title, text], index) => (
-                <article key={title} className={`rounded-2xl border border-white/10 bg-white/[.06] p-6 ${index === serviceCards.length - 1 ? "sm:col-span-2" : ""}`}>
+                <article key={title} id={title === "Diamanti" ? "valutazione-diamanti" : undefined} className={`scroll-mt-28 rounded-2xl border border-white/10 bg-white/[.06] p-6 ${index === serviceCards.length - 1 ? "sm:col-span-2" : ""}`}>
                   <h3 className="font-display text-2xl font-black">{title}</h3>
                   <p className="mt-3 text-warm/64">{text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="franchising" className="px-5 py-20">
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.78fr_1.22fr]">
-            <div>
-              <p className="font-bold uppercase tracking-[.22em] text-orange">Academy e franchising</p>
-              <h2 className="mt-3 font-display text-4xl font-black md:text-5xl">Metodo, formazione e standard OroActive.</h2>
-              <p className="mt-5 text-[#5c5145]">
-                La nuova impostazione mantiene visibili le aree strategiche del progetto: formazione, processi di negozio e sviluppo della rete.
-              </p>
-            </div>
-            <div className="grid gap-5 md:grid-cols-2">
-              {growthCards.map(([title, text, href, cta]) => (
-                <article key={title} className="rounded-[1.5rem] border border-[#e2d6c2] bg-white p-7 shadow-[0_20px_60px_rgba(42,31,15,.12)]">
-                  <h3 className="font-display text-3xl font-black">{title}</h3>
-                  <p className="mt-4 leading-7 text-[#5c5145]">{text}</p>
-                  <Link href={href} className="mt-7 inline-flex rounded-full bg-night px-6 py-3 text-sm font-black text-orange transition hover:bg-black">
-                    {cta}
-                  </Link>
                 </article>
               ))}
             </div>

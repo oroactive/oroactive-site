@@ -17,7 +17,7 @@ export function Hero() {
             Il nuovo standard per vendere oro in modo chiaro, veloce e sicuro.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-warm/72">
-            OroActive combina quotazioni live, consulenza professionale, gestione digitale degli atti e formazione interna per offrire un&apos;esperienza premium nei compro oro moderni.
+            OroActive combina valutazioni individuali, consulenza professionale e gestione digitale degli atti per offrire un&apos;esperienza premium nei compro oro moderni.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="#negozi" className="rounded-full bg-orange px-7 py-4 text-center font-bold text-night shadow-glow transition hover:scale-[1.02]">
@@ -37,8 +37,8 @@ export function Hero() {
             <div className="grid gap-4">
               {[
                 ["Oro 18kt", "Valutazione rapida", "+ aggiornamento mercato"],
-                ["Stima preziosi", "Oro, argento e platino", "tutte le carature"],
-                ["Academy", "Operatori formati", "standard OroActive"]
+                ["Stima preziosi", "Oro, argento e diamanti", "verifica professionale"],
+                ["Diamanti", "Valutazione individuale", "verifica in sede"]
               ].map(([title, value, note]) => (
                 <div key={title} className="rounded-2xl border border-white/10 bg-white/[.04] p-5">
                   <p className="text-sm text-warm/50">{title}</p>

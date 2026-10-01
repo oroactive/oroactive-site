@@ -9,8 +9,6 @@ const links = [
   ["Quotazioni", "/#quotazioni"],
   ["Perizie", "/#perizie"],
   ["Negozi", "/#negozi"],
-  ["Academy", "/academy"],
-  ["Franchising", "/#franchising"],
   ["Blog", "/#blog"]
 ];
 

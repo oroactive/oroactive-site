@@ -11,10 +11,10 @@ const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space", disp
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "OroActive | Compro oro premium, quotazioni live e Academy",
+    default: "OroActive | Valutazione oro, argento e diamanti",
     template: "%s | OroActive"
   },
-  description: "OroActive unisce compro oro premium, tecnologia, quotazioni live, formazione Academy e servizi franchising.",
+  description: "OroActive: compro oro premium e valutazione professionale di oro, argento, diamanti, gioielli e monete.",
   applicationName: "OroActive",
   manifest: "/manifest.webmanifest",
   icons: { icon: brand.logoSrc, apple: brand.appleIcon },

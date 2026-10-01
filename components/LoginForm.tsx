@@ -20,7 +20,7 @@ export function LoginForm() {
   return (
     <form onSubmit={handleSubmit} className="glass w-full max-w-md rounded-[2rem] p-8">
       <h1 className="font-display text-4xl font-black">Area riservata</h1>
-      <p className="mt-2 text-warm/60">Accesso utenti, amministratori e Academy.</p>
+      <p className="mt-2 text-warm/60">Accesso utenti e amministratori.</p>
       <label className="mt-6 grid gap-2 text-sm font-bold text-warm/70">
         Email
         <input

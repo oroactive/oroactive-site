@@ -35,16 +35,9 @@ export const faqs = [
     answer: "Si, puoi stimare il valore online e scegliere il negozio piu comodo per la verifica professionale del metallo e del titolo."
   },
   {
-    question: "OroActive acquista anche argento e platino?",
-    answer: "Si, OroActive gestisce oro, argento e platino con quotazioni dedicate e processi di controllo professionali."
+    question: "OroActive valuta anche argento e diamanti?",
+    answer: "Sì, valutiamo l'argento in base a peso e titolo. Per i diamanti la valutazione è individuale e considera caratura, taglio, colore, purezza e documentazione disponibile, con verifica della pietra in sede."
   }
-];
-
-export const academyFaculties = [
-  "Metalli Preziosi",
-  "Gemmologia",
-  "Procedure Operative",
-  "Business e Leadership"
 ];
 
 export const blogPosts = [
@@ -59,11 +52,5 @@ export const blogPosts = [
     title: "Quotazione oro usato: cosa controllare",
     excerpt: "Perche il prezzo al grammo dipende da titolo, peso e andamento del mercato.",
     category: "Quotazioni"
-  },
-  {
-    slug: "franchising-compro-oro-oroactive",
-    title: "Franchising compro oro: il modello OroActive",
-    excerpt: "Tecnologia, formazione e controllo operativo per scalare punti vendita premium.",
-    category: "Franchising"
   }
 ];

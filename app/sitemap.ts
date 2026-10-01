@@ -5,7 +5,6 @@ import { siteUrl } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
-    "/academy",
     "/dashboard",
     "/login",
     ...stores.map((store) => `/stores/${store.slug}`),

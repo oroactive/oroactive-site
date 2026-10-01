@@ -2,7 +2,7 @@
   "name": "oroactive-it",
   "version": "1.0.0",
   "private": true,
-  "description": "Sito ufficiale OroActive.it premium, SEO e Academy.",
+  "description": "Sito ufficiale OroActive.it: valutazione oro, argento e diamanti.",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
