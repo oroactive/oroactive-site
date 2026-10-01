@@ -1,6 +1,7 @@
 import { Nav } from "@/components/Nav";
 import { OroShopInspiredHome } from "@/components/OroShopInspiredHome";
 import { siteUrl } from "@/lib/site";
+import { brand } from "@/lib/brand";
 
 export default function Home() {
   const structuredData = {
@@ -8,7 +9,7 @@ export default function Home() {
     "@type": "Organization",
     name: "OroActive",
     url: siteUrl,
-    logo: `${siteUrl}/oroactive-logo.png`,
+    logo: `${siteUrl}${brand.logoSrc}`,
     sameAs: []
   };
 

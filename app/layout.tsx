@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { PwaRegister } from "@/components/PwaRegister";
 import { siteUrl } from "@/lib/site";
+import { brand } from "@/lib/brand";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
   description: "OroActive unisce compro oro premium, tecnologia, quotazioni live, formazione Academy e servizi franchising.",
   applicationName: "OroActive",
   manifest: "/manifest.webmanifest",
+  icons: { icon: brand.logoSrc, apple: brand.appleIcon },
   openGraph: {
     title: "OroActive",
     description: "Compro oro tecnologico, premium e trasparente.",

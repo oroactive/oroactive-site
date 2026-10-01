@@ -1,5 +1,5 @@
-const CACHE_NAME = "oroactive-site-static-v4";
-const STATIC_ASSETS = ["/icon.svg", "/oroactive-logo.png", "/manifest.webmanifest"];
+const CACHE_NAME = "oroactive-site-static-v5";
+const STATIC_ASSETS = ["/oroactive-logo-ufficiale-20261001.svg", "/oroactive-icon-180-20261001.png", "/oroactive-icon-192-20261001.png", "/oroactive-icon-512-20261001.png", "/manifest.webmanifest"];
 const SENSITIVE_PREFIXES = ["/api/", "/dashboard", "/login"];
 
 self.addEventListener("install", (event) => {

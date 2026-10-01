@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { BrandLogo } from "@/components/BrandLogo";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { type MouseEvent, useEffect, useState } from "react";
@@ -70,14 +70,7 @@ export function Nav() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-night/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <Link href="/" className="flex shrink-0 items-center" aria-label="OroActive home">
-          <Image
-            src="/oroactive-logo.png"
-            alt="OroActive"
-            width={108}
-            height={135}
-            priority
-            className="h-12 w-auto sm:h-14"
-          />
+          <BrandLogo priority className="w-14 sm:w-16" />
         </Link>
         <div className="hidden items-center gap-6 text-sm text-warm/75 lg:flex">
           {links.map(([label, href]) => (

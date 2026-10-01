@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { BrandLogo } from "@/components/BrandLogo";
 import Link from "next/link";
 
 export function Hero() {
@@ -9,14 +9,7 @@ export function Hero() {
     <section className="relative overflow-hidden px-5 py-20 md:py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.08fr_.92fr]">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .7 }}>
-          <Image
-            src="/oroactive-logo.png"
-            alt="OroActive"
-            width={300}
-            height={375}
-            priority
-            className="mb-7 h-auto w-48 sm:w-56 md:w-64"
-          />
+          <BrandLogo priority className="mb-7 w-48 sm:w-56 md:w-64" />
           <p className="mb-5 inline-flex rounded-full border border-orange/40 bg-orange/10 px-4 py-2 text-sm font-bold text-orange">
             Compro oro premium + tecnologia proprietaria
           </p>
