@@ -1,14 +1,11 @@
 import type { MetadataRoute } from "next";
-import { blogPosts, stores } from "@/lib/data";
 import { siteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
-    "/dashboard",
-    "/login",
-    ...stores.map((store) => `/stores/${store.slug}`),
-    ...blogPosts.map((post) => `/blog/${post.slug}`)
+    "/privacy-policy",
+    "/indice-del-sito"
   ].map((path) => ({
     url: `${siteUrl}${path}`,
     lastModified: new Date(),

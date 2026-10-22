@@ -1,6 +1,7 @@
 import { BrandLogo } from "@/components/BrandLogo";
 import Link from "next/link";
 import { blogPosts, faqs, stores } from "@/lib/data";
+import { company } from "@/lib/company";
 
 export function ValueFlow() {
   const steps = [
@@ -82,7 +83,7 @@ const footerLinks = [
   ["Quotazioni", "/#quotazioni"],
   ["Perizie", "/#perizie"],
   ["Negozi", "/#negozi"],
-  ["Blog", "/#blog"]
+  ["Domande frequenti", "/#blog"]
 ];
 
 const serviceLinks = [
@@ -138,8 +139,13 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 px-5 py-6 text-center text-sm text-warm/55">
-        © 2026 OroActive Tech - Software gestionale proprietario - Privacy Policy - Cookie Policy
+      <div className="border-t border-white/10 px-5 py-6 text-center text-sm leading-7 text-warm/70">
+        <p className="mx-auto max-w-5xl [overflow-wrap:anywhere]">
+          © 2026 - {company.name} | P.I./C.F. {company.taxId}{" "}
+          <span>Sede legale: {company.registeredOffice}</span>
+          {" - "}<Link href="/privacy-policy" className="underline underline-offset-4 hover:text-orange">Privacy Policy</Link>
+          {" - "}<Link href="/indice-del-sito" className="underline underline-offset-4 hover:text-orange">Indice del sito</Link>
+        </p>
       </div>
     </footer>
   );

@@ -3,13 +3,14 @@
 import { BrandLogo } from "@/components/BrandLogo";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { type MouseEvent, useEffect, useState } from "react";
+import { type MouseEvent, useEffect } from "react";
+import { appUrl } from "@/lib/company";
 
 const links = [
   ["Quotazioni", "/#quotazioni"],
   ["Perizie", "/#perizie"],
   ["Negozi", "/#negozi"],
-  ["Blog", "/#blog"]
+  ["Domande frequenti", "/#blog"]
 ];
 
 function scrollToSection(target: string, behavior: ScrollBehavior = "smooth") {
@@ -25,7 +26,6 @@ function scrollToSection(target: string, behavior: ScrollBehavior = "smooth") {
 export function Nav() {
   const pathname = usePathname();
   const router = useRouter();
-  const [accountName, setAccountName] = useState<string | null>(null);
 
   useEffect(() => {
     if (pathname !== "/") return;
@@ -37,16 +37,6 @@ export function Nav() {
 
     window.sessionStorage.removeItem("oroactive-section-target");
     scrollToSection(target, "auto");
-  }, [pathname]);
-
-  useEffect(() => {
-    const syncAccountName = () => {
-      setAccountName(window.localStorage.getItem("oroactive-account-name"));
-    };
-
-    syncAccountName();
-    window.addEventListener("storage", syncAccountName);
-    return () => window.removeEventListener("storage", syncAccountName);
   }, [pathname]);
 
   function handleSectionClick(event: MouseEvent<HTMLAnchorElement>, href: string) {
@@ -76,10 +66,10 @@ export function Nav() {
           ))}
         </div>
         <Link
-          href={accountName ? "/dashboard" : "/login"}
+          href={appUrl}
           className="rounded-full bg-orange px-5 py-2 text-sm font-bold text-night transition hover:shadow-glow"
         >
-          {accountName || "Area riservata"}
+          Area riservata
         </Link>
       </nav>
     </header>
