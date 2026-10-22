@@ -35,6 +35,7 @@ Impostare le variabili:
 
 - `DATABASE_URL`
 - `NEXT_PUBLIC_SITE_URL`
+- `OROACTIVE_PUBLIC_SITE=open` per pubblicare le pagine del sito; in produzione, senza questa scelta esplicita resta la pagina di sospensione.
 - `OPENAI_API_KEY` se si abilita l'assistente AI
 
 Comando build:
@@ -50,6 +51,12 @@ npm start
 ```
 
 ## Note sicurezza
+
+La pubblicazione rende disponibili homepage, Privacy Policy e indice del sito.
+L’area riservata rimanda al gestionale autenticato su `https://app.oroactive.it`.
+Le API CMS, AI e lead non sono pubblicate: le richieste di scrittura in produzione sono bloccate prima dei gestori.
+Le pagine dimostrative di negozi e articoli restano escluse finché non contengono informazioni verificate.
+Questo aggiornamento non richiede migrazioni né modifiche ai dati del database.
 
 Il service worker cachea solo asset statici del sito pubblico. Non cachea API, dashboard o login.
 
