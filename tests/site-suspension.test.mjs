@@ -29,7 +29,7 @@ test("direct pages, APIs, assets and crawler variants cannot expose the closed s
 test("only branding and the network-only worker remain available; robots has no sitemap", async () => {
   const { suspensionResponse } = await import("../lib/site-suspension.ts");
   const request = path => new Request(`https://oroactive.it${path}`);
-  assert.equal(suspensionResponse(request("/oroactive-logo-ufficiale-20261001.svg"), "production", undefined), null);
+  assert.equal(suspensionResponse(request("/oroactive-logo-rilievo-20261026.png"), "production", undefined), null);
   const robots = suspensionResponse(request("/robots.txt"), "production", undefined);
   assert.equal(robots.status, 200);
   assert.equal(await robots.text(), "User-agent: *\nDisallow: /\n");

@@ -1,4 +1,4 @@
-const logoPath = "/oroactive-logo-ufficiale-20261001.svg";
+const logoPath = "/oroactive-logo-rilievo-20261026.png";
 
 const holdingPage = `<!doctype html>
 <html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@ const holdingPage = `<!doctype html>
 <style>
 *{box-sizing:border-box}body{margin:0;min-height:100vh;min-height:100svh;display:grid;place-items:center;background:#0b0b0d;color:#faf6ef;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:24px}
 main{width:100%;max-width:680px;text-align:center;padding:clamp(28px,6vw,60px) clamp(20px,5vw,48px);border:1px solid #482b1e;border-radius:28px;background:#121212}
-img{display:block;width:132px;height:132px;object-fit:contain;margin:0 auto 28px}.eyebrow{color:#ef500b;text-transform:uppercase;font-size:13px;letter-spacing:.16em;font-weight:800}
+img{display:block;width:132px;height:132px;object-fit:contain;border-radius:50%;margin:0 auto 28px}.eyebrow{color:#ef500b;text-transform:uppercase;font-size:13px;letter-spacing:.16em;font-weight:800}
 h1{font-size:clamp(28px,5vw,40px);line-height:1.15;margin:20px 0}p{font-size:17px;line-height:1.7;color:#d3cbc3;margin:18px 0 0}.line{height:3px;width:48px;margin:28px auto 0;background:#ef500b;border-radius:2px}
 </style></head><body><main><img src="${logoPath}" alt="OroActive · Compro Oro" width="132" height="132">
 <div class="eyebrow">Prossima apertura</div><h1>Sito temporaneamente non disponibile</h1>

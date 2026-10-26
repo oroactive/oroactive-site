@@ -9,7 +9,7 @@ export function BrandLogo({ className = "", priority = false }: { className?: st
       width={1000}
       height={1000}
       priority={priority}
-      className={`h-auto shrink-0 object-contain ${className}`}
+      className={`h-auto shrink-0 rounded-full object-contain ${className}`}
     />
   );
 }
