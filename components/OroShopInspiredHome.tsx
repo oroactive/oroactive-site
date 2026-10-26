@@ -43,10 +43,10 @@ export function OroShopInspiredHome() {
                 Valutiamo oro, argento, diamanti, gioielli e monete con verifica professionale, massima riservatezza e pagamento chiaro in negozio.
               </p>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                <Link href="#negozi" className="rounded-full bg-orange px-7 py-4 text-center font-black text-night shadow-glow transition hover:ring-2 hover:ring-orange/50">
+                <Link href="#negozi" className="oa-relief-button rounded-full bg-orange px-7 py-4 text-center font-black text-night shadow-glow transition hover:ring-2 hover:ring-orange/50">
                   Richiedi una valutazione
                 </Link>
-                <Link href="#perizie" className="rounded-full border border-white/25 px-7 py-4 text-center font-black text-warm transition hover:border-orange hover:text-orange">
+                <Link href="#perizie" className="oa-relief-button rounded-full border border-white/25 px-7 py-4 text-center font-black text-warm transition hover:border-orange hover:text-orange">
                   Perizie certificate
                 </Link>
               </div>
@@ -130,7 +130,7 @@ export function OroShopInspiredHome() {
                 <p className="font-bold uppercase tracking-[.22em] text-orange">Punti vendita</p>
                 <h2 className="mt-3 font-display text-4xl font-black text-orange md:text-5xl">Coming Soon</h2>
               </div>
-              <Link href="#perizie" className="rounded-full bg-night px-6 py-3 text-center font-black text-orange transition hover:bg-black">
+              <Link href="#perizie" className="oa-relief-button rounded-full bg-night px-6 py-3 text-center font-black text-orange transition hover:bg-black">
                 Scopri le perizie
               </Link>
             </div>

@@ -4,6 +4,7 @@ import { PwaRegister } from "@/components/PwaRegister";
 import { siteUrl } from "@/lib/site";
 import { brand } from "@/lib/brand";
 import "./globals.css";
+import "./buttons-relief.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space", display: "swap" });
@@ -46,7 +47,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="it" className={`${inter.variable} ${space.variable}`}>
+    <html lang="it" data-relief="on" className={`${inter.variable} ${space.variable}`}>
       <body className="font-sans antialiased">
         <PwaRegister />
         {children}

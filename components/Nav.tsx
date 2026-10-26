@@ -67,7 +67,7 @@ export function Nav() {
         </div>
         <Link
           href={appUrl}
-          className="rounded-full bg-orange px-5 py-2 text-sm font-bold text-night transition hover:shadow-glow"
+          className="oa-relief-button rounded-full bg-orange px-5 py-2 text-sm font-bold text-night transition hover:shadow-glow"
         >
           Area riservata
         </Link>

@@ -57,7 +57,7 @@ export function QuoteTicker() {
             <p className="font-bold uppercase tracking-[.22em] text-orange">Quotazioni e valutazioni</p>
             <h2 className="mt-2 font-display text-4xl font-black md:text-5xl">Oro, argento e diamanti</h2>
           </div>
-          <a href="https://www.bullionvault.com/gold-price-chart.do" target="_blank" rel="noreferrer" className="hidden rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-warm/80 hover:border-orange hover:text-orange md:inline-flex">
+          <a href="https://www.bullionvault.com/gold-price-chart.do" target="_blank" rel="noreferrer" className="oa-relief-button hidden rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-warm/80 hover:border-orange hover:text-orange md:inline-flex">
             Fonte · BullionVault
           </a>
         </div>
@@ -89,7 +89,7 @@ export function QuoteTicker() {
             <h3 className="text-warm/75">Diamanti</h3>
             <strong className="mt-3 block font-display text-3xl">Valutazione dedicata</strong>
             <p className="mt-3 text-sm leading-6 text-warm/75">Ogni pietra viene valutata singolarmente per caratura, taglio, colore e purezza.</p>
-            <Link href="#valutazione-diamanti" className="mt-5 inline-flex min-h-11 items-center rounded-full bg-orange px-5 py-3 text-sm font-bold text-night transition hover:shadow-glow">
+            <Link href="#valutazione-diamanti" className="oa-relief-button mt-5 inline-flex min-h-11 items-center rounded-full bg-orange px-5 py-3 text-sm font-bold text-night transition hover:shadow-glow">
               Scopri la valutazione diamanti
             </Link>
           </article>

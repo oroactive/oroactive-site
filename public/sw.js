@@ -1,4 +1,4 @@
-const CACHE_NAME = "oroactive-site-static-v10";
+const CACHE_NAME = "oroactive-site-static-v11";
 const STATIC_ASSETS = ["/oroactive-logo-rilievo-20261026.png", "/oroactive-icon-180-20261026.png", "/oroactive-icon-192-20261026.png", "/oroactive-icon-512-20261026.png", "/manifest.webmanifest"];
 const SENSITIVE_PREFIXES = ["/api/", "/dashboard", "/login"];
 
